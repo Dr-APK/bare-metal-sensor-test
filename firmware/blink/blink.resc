@@ -1,0 +1,5 @@
+mach create
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery-kit.repl
+sysbus LoadELF @blink.elf
+sysbus LogPeripheralAccess sysbus.gpioPortD true
+start
